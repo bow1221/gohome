@@ -80,24 +80,63 @@
 .dropdown:hover .dropdown-content {
     display: block;
  }
-.img{
+
+ 
+  
+  .picontainer img {
     width: 100%;
-}
+    height: auto;
+  }
+  
+  
+  
+  .picb {
+    background-color: #d3ac4262;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    padding: 60px 80px 60px 300px;
+    border-radius: 10px;
+  }
+  .picp{
+      letter-spacing: 0.3em;;
+      padding-bottom: 10px;
+  }
+  .picbtn {
+    background-color:  #e09845;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
 .midoword{
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 .midowordtext{
     font-size: 18px;
     width: 75%;
     margin: auto;
 }
-.downy{
+.down{
     display: flex;
     justify-content: center;
 }
 .downimg{
     height: 300px;
+}
+.fourpic{
+    padding: 30px 0px;
 }
 .footer{
     background-color: #e09845;
