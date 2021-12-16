@@ -2,15 +2,21 @@
 .header{
     width:100%;
 }
-
+@media(max-width:960px){
+  .navcollapse{
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+}
 .logo{
     float: left;
     padding: 10px 40px;
 }
-
+/*--------nav---------------*/
 .navset{
     padding: 20px 40px 0px 40px;
 }
+
 
 .navbar {
     background-color: white;
@@ -23,7 +29,7 @@
     font-size: 16px;
     color: black;
     text-align: center;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -81,8 +87,52 @@
     display: block;
  }
 
+ /*--------navtoggle---------------*/
+
+ .toggle{
+   position:absolute;
+   top: 0;
+   right: 0;
+   width: 70px;
+   height: 70px;
+   display: inline-block;
+   padding: 12px;
+   padding-top: 30px;
+ }
+ @media(min-width:960px){
+  .toggle{
+    display: none;
+  }
+ }
+ .toggle span{
+   display: block;
+   width: 100%;
+   height: 3px;
+   background-color: #dcb577;
+   margin-bottom: 8px;
+ }
+   
+ /*--------popnav---------------*/
+ @media(max-width:960px){
+   .popupnav{
+     position:fixed;
+     top: 0;
+     left: 0;
+     width:100%;
+     height:100%;
+     background-color: #1c1c1c;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.3s;
+   }
+   #orverlay:target{
+    visibility: visible;
+     opacity: 1;
+   }
+ }
  
-  
+
+ /*--------bigpicture---------------*/
   .picontainer img {
     width: 100%;
     height: auto;
@@ -90,7 +140,7 @@
   
   
   
-  .picb {
+  /*.picb {
     background-color: #d3ac4262;
     position: absolute;
     top: 55%;
@@ -112,13 +162,13 @@
     font-size: 16px;
     padding: 12px 24px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
   }
   
   .container .btn:hover {
     background-color: black;
-  }
+  }*/
+/*--------welcome---------------*/
 .midoword{
     text-align: center;
     padding: 40px 20px;
@@ -128,6 +178,7 @@
     width: 75%;
     margin: auto;
 }
+/*--------animalpicture--------------*/
 .down{
     display: flex;
     justify-content: center;
@@ -138,6 +189,7 @@
 .fourpic{
     padding: 30px 0px;
 }
+/*--------footer---------------*/
 .footer{
     background-color: #e09845;
     padding: 100px;
