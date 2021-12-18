@@ -2,6 +2,9 @@
 .header{
     width:100%;
 }
+.navcollapse{
+ z-index: 999;
+}
 @media(max-width:960px){
   .navcollapse{
     margin-right: -16px;
@@ -123,7 +126,6 @@
      background-color: #1c1c1c;
      opacity: 0;
      visibility: hidden;
-     transition: all 0.3s;
    }
    #orverlay:target{
     visibility: visible;
